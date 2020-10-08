@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        background-color: black !important;
+      }
+      
+      hr {
+        border-color: rgb(209, 6, 113) !important;
+      }
+
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        text-align: justify;
+        text-indent: 4em;
+      }
+
+      @media (max-width: 500px) {
+        p {
+          font-size: 16px;
+          text-indent: 2em;
+        }
+
+        li {
+          font-size: 16px;
+      }
+
+        iframe {
+          width: 250px;
+        }
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="sortcut icon" href="./imagens/logo.jpg">
+    <title>Banco de Dados</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a name="topo" href="./index.html">
+                <img style="height: 50px;" src="./imagens/logo.jpg" class="figure-img img-fluid rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="./index.html">Voltar a pagina principal</a></button>
+                  </li>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#Tipos">Tipos</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#Chaves">Chaves</a>
+                  </li></button>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div id="pai" class="container">
+        <div class="jumbotron">
+          <a name="Tipos"></a>
+          <h1 style="text-align: center; color: blueviolet;">Tipos de dados</h1>
+          <p>Existem vários tipos de dados, os principais são inteiros, decimais, strings e data.</p>
+          <li>Inteiros: Existem três tipos de inteiros, os inteiros pequenos Contém números inteiros entre -32768 e 32,767, inteiros normais Contém números inteiros entre -2147483648 e 2147483647 e inteiros grandes(long int) Contém números inteiros entre -9223372036854775808 e 9223372036854775807.</li>
+          <li>Decimal: Existem vários tipos de decimais, podendo ser de precisão simples ou de precisão dupla.</li>
+          <li>String: Podem conter apenas um cartere ou milhares de caracteres.</li>
+          <li>Data: Contém uma data válida de 1 de janeiro de 0001 a 31 de dezembro de 9999. Ainda existem outros tipos de data.</li>
+          <br>
+          <p>Caso queira se aprofundar no assunto clique no botão para acessar o site da IBM que tem uma tabela completa.</p>
+          <button type="button" class="btn btn-dark">
+            <a target="_blank" style="color: whitesmoke;" class="nav-link" href="https://www.ibm.com/support/knowledgecenter/pt-br/SSEPCD_9.5.0/com.ibm.ondemand.mp.doc/arsa0094.htm">Saiba mais</a>
+          </button>
+        </div>
+
+        <div class="jumbotron">
+          <a name="Chaves"></a>
+          <h1 style="text-align: center; color: blueviolet;">Chave-primária</h1>
+          <p>
+            Chave primária é um conceito muito importante que está diretamente ligado à possibilidade de se consultar dados de tabelas do banco de dados. Uma chave primária é um atributo ou conjunto de atributos que identifica unicamente um registro na tabela e que por isso não pode ser repetido, pois caso contrário não teria como diferenciar um registro de outro quando fossemos consultá-los. 
+          </p>
+          <p>
+            Podemos definir um atributo como sendo chave primária explicitamente, ou seja, incluímos um campo contador que é incrementado em um a cada novo registro inserido ou então algum atributo que temos certeza que identifica unicamente um registro, como o número do CPF num cadastro de pessoa.
+          </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sbIT5UXTEg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+          <button type="button" class="btn btn-dark">
+            <a style="color: whitesmoke;" class="nav-link" href="#topo">Voltar ao topo</a>
+          </button>
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <h6 style="color: white;">Vitor Mateus Weirich - Fundamentos ao Desonvilmento Web - 2020</h6>
+    </footer>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

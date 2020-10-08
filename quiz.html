@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        background-color: black !important;
+      }
+      
+      hr {
+        border-color: rgb(209, 6, 113) !important;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="sortcut icon" href="./imagens/logo.jpg">
+    <title>Quiz</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a href="./index.html">
+                <img style="height: 50px;" src="./imagens/logo.jpg" class="figure-img img-fluid rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="./index.html">Voltar a pagina principal</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div id="pai" class="container">
+        <div class="jumbotron">
+          <h1 style="text-align: center; color: blueviolet;">Bem vindo ao quiz sobre Banco de Dados!</h1>
+        </div>
+        <div class="jumbotron">
+          <P>1: O que é Banco de Dados?</P>
+          <li>A: Um banco confortável.</li>
+          <li>B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.</li>
+          <li>C: Uma planilha do excel.</li>
+          <li>D: Um banco onde você pode depositar dados.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp1" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result1"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>2: O que significa a sigla SQL?</P>
+          <li>A: Linguagem de Programação.</li>
+          <li>B: Linguagem padrão de modelagem de dados.</li>
+          <li>C: Linguagem de consulta padrão.</li>
+          <li>D: Standard Query Language.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp2" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result2"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>3: O que é MySQL?</P>
+          <li>A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.</li>
+          <li>A: Um fremword de css.</li>
+          <li>A: Um compilador de JavaScript.</li>
+          <li>A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados orientado a objetos.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp3" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result3"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>4: O que é SQL?</P>
+          <li>A: SQL é um montador de algoritmos.</li>
+          <li>B: SQL é um gerenciador de arquivos.</li>
+          <li>C: SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.</li>
+          <li>D: SQL é um programa usado para editar vídeos.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp4" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result4"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>5: Qual a alternativa contém apenas tipos de dados presentes em banco de dados:</P>
+          <li>A: Inteiros, Float, String e Data.</li>
+          <li>A: String, Float, String e Espécie.</li>
+          <li>A: Float, Lista, String e Herança.</li>
+          <li>A: Vetor, Float, String e Gênero.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp5" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result5"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>6: Para que serve uma Chave em Banco de Dados?</P>
+          <li>A: Para poder prender um arquivo.</li>
+          <li>B: Para ter acesso a um objeto.</li>
+          <li>C: Para poder identificar um objeto de forma única.</li>
+          <li>D: Para abrir o Banco.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp6" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result6"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>7: O que é uma Tabela?</P>
+          <li>A: Um conjunto de linhas.</li>
+          <li>B: Um conjunto de dados dispostos em número finito de colunas e número limitado de linhas.</li>
+          <li>C: Um conjunto de dados dispostos em número infinito de colunas e número limitado de linhas.</li>
+          <li>D: Um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp7" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result7"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>8: Um registro pode ser chamado tembém de? </P>
+          <li>A: Linha.</li>
+          <li>B: Coluna.</li>
+          <li>C: Diagonal.</li>
+          <li>D: Reta.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp8" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result8"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>9: MySQL é um banco de dados de qual tipo?</P>
+          <li>A: Orientado a objetos.</li>
+          <li>B: Sequencial.</li>
+          <li>C: Relacional.</li>
+          <li>D: Numérico.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp9" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result9"></h5>
+        </div>
+        <hr>
+        <div class="jumbotron">
+          <P>10: Por que os banco de dados foram criados?</P>
+          <li>A: Porque o volume de dados aumentou muito.</li>
+          <li>B: Porque não era mais possível fabricar tanto papel.</li>
+          <li>C: Porque os papes podiam molher e dessa forma se perdia os dados.</li>
+          <li>D: Porque os bancos de couro eram muito pouco confortáveis.</li>
+          <form class="form-inline">
+            <h6>Escolha uma alternativa:</h6>
+            <div class="form-group mx-sm-3 mb-2">
+              <select id="resp10" class="form-control" id="operacao">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </form>
+          <h5 id="result10"></h5>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="verifica()">Verificar respostas</button>
+      </div>
+    </section>
+
+    <footer>
+      <hr>
+      <h6 style="color: white;">Vitor Mateus Weirich - Fundamentos ao Desonvilmento Web - 2020</h6>
+    </footer>
+    <script>
+      var jumb = document.createElement('div');
+      jumb.className = 'jumbotron';
+      jumb.id = 'filho';
+      jumb.style = 'margin-top:10px;'
+      var resp = document.createElement('h4');
+      resp.id = 'verificado';
+      resp.style = 'color: blueviolet; text-align: justify;';
+      
+
+      function verifica(){
+        var a = document.getElementById('resp1').value;
+        var cont = 0;
+        var string;
+        document.getElementById('result1').innerHTML = a;
+        if (a==2) {
+          document.getElementById('result1').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.";
+          cont++;
+        } else {
+          document.getElementById('result1').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.";
+        }
+
+        var a = document.getElementById('resp2').value;
+        document.getElementById('result2').innerHTML = a;
+        if (a==4) {
+          document.getElementById('result2').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "D: Standard Query Language.";
+          cont++;
+        } else {
+          document.getElementById('result2').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "D: Standard Query Language.";
+        }
+
+        var a = document.getElementById('resp3').value;
+        document.getElementById('result3').innerHTML = a;
+        if (a==1) {
+          document.getElementById('result3').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.";
+          cont++;
+        } else {
+          document.getElementById('result3').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.";
+        }
+
+        var a = document.getElementById('resp4').value;
+        document.getElementById('result4').innerHTML = a;
+        if (a==3) {
+          document.getElementById('result4').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.";
+          cont++;
+        } else {
+          document.getElementById('result4').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.";
+        }
+
+        var a = document.getElementById('resp5').value;
+        document.getElementById('result5').innerHTML = a;
+        if (a==1) {
+          document.getElementById('result5').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Inteiros, Float, String e Data.";
+          cont++;
+        } else {
+          document.getElementById('result5').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Inteiros, Float, String e Data.";
+        }
+
+        var a = document.getElementById('resp6').value;
+        document.getElementById('result6').innerHTML = a;
+        if (a==3) {
+          document.getElementById('result6').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: Para poder identificar um objeto de forma única.";
+          cont++;
+        } else {
+          document.getElementById('result6').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: Para poder identificar um objeto de forma única.";
+        }
+
+        var a = document.getElementById('resp7').value;
+        document.getElementById('result7').innerHTML = a;
+        if (a==4) {
+          document.getElementById('result7').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "D: Um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas.";
+          cont++;
+        } else {
+          document.getElementById('result7').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "D: Um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas.";
+        }
+
+        var a = document.getElementById('resp8').value;
+        document.getElementById('result8').innerHTML = a;
+        if (a==1) {
+          document.getElementById('result8').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Linha.";
+          cont++;
+        } else {
+          document.getElementById('result8').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Linha.";
+        }
+
+        var a = document.getElementById('resp9').value;
+        document.getElementById('result9').innerHTML = a;
+        if (a==3) {
+          document.getElementById('result9').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: Relacional.";
+          cont++;
+        } else {
+          document.getElementById('result9').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: Relacional.";
+        }
+
+        var a = document.getElementById('resp10').value;
+        document.getElementById('result10').innerHTML = a;
+        if (a==1) {
+          document.getElementById('result10').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Porque o volume de dados aumentou muito.";
+          cont++;
+        } else {
+          document.getElementById('result10').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Porque o volume de dados aumentou muito.";
+        }
+
+        if (cont<=4) {
+          string = "Navegue neste site e adquira conhecimentos sobre esse assunto e depois tente novamente para verificar o que aprendeu.";
+        } else if (cont<=6) {
+          string = "Muito bem, você demonstrou conhecer um pouco sobre esse assunto.";
+        } else {
+          string = "Parabéns você realmente conhece muito sobre este assunto.";
+        }
+
+        document.getElementById('pai').appendChild(jumb);
+
+        document.getElementById('filho').appendChild(resp);
+
+        
+        if (cont==0) {
+          document.getElementById('verificado').innerHTML = "Você não acertou nenhuma pergunta." + "<br>" + string;
+        } else if (cont==1) {
+          document.getElementById('verificado').innerHTML = "Você acertou apenas uma pergunta." + "<br>" + string;
+        } else {
+          document.getElementById('verificado').innerHTML = "Você acertou " + cont + " perguntas." + "<br>" + string;
+        }
+      }
+    </script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

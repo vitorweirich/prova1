@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        background-color: black !important;
+      }
+      
+      hr {
+        border-color: rgb(209, 6, 113) !important;
+      }
+
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        text-align: justify;
+        text-indent: 4em;
+      }
+
+      @media (max-width: 500px) {
+        p {
+          font-size: 16px;
+          text-indent: 2em;
+        }
+
+        iframe {
+          width: 250px;
+        }
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="sortcut icon" href="./imagens/logo.jpg">
+    <title>Banco de Dados</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a name="topo" href="./index.html">
+                <img style="height: 50px;" src="./imagens/logo.jpg" class="figure-img img-fluid rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <button type="button" class="btn btn-dark"><li class="nav-item active">
+                      <a style="color: whitesmoke;" class="nav-link" href="./index.html">Voltar a pagina principal</a>
+                    </li></button>
+                    <button type="button" class="btn btn-dark"><li class="nav-item active">
+                      <a style="color: whitesmoke;" class="nav-link" href="#sql">SQL</a>
+                    </li></button>
+                    <button type="button" class="btn btn-dark"><li class="nav-item active">
+                      <a style="color: whitesmoke;" class="nav-link" href="#mysql">MySQL</a>
+                    </li></button>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div id="pai" class="container">
+        <div class="jumbotron">
+          <a name="sql" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Linguagem SQL</h1>
+          <p>
+            SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais. Ela é uma linguagem declarativa e que não necessita de profundos conhecimentos de programação para que alguém possa começar a escrever queries, as consultas e pedidps, que trazem resultados de acordo com o que você está buscando. SQL significa Standard Query Language, literalmente a linguagem padrão para realizar queries.
+          </p>
+          <p>
+            A linguagem SQL é utilizada de maneira relativamente parecida entre os principais bancos de dados relacionais do mercado: Oracle, MySQL, MariaDB, PostgreSQL, Microsoft SQL Server, entre muitos outros. Cada um tem suas características, sendo o MySQL e o PostgreSQL extremamente populares por possuírem versões gratuitas e de código aberto.
+          </p>
+          <p>
+            É também uma linguagem que muitos profissionais acabam precisando aprender: seja quem usa Excel de forma pesada e acaba migrando as informações para um banco de dados, seja um cientista de dados que usa Python para agregar os dados das diferentes fontes de informações.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/64kPRsD22w4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="jumbotron">
+          <a name="mysql" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Gerenciador de banco de dados MySQL</h1>
+          <p>
+            MysSQL é uma empresa sueca chamada MySQL AB desenvolveu o MySQL em 1994. Então, a companhia norte-americana Sun Microsystems obteve controle total do software ao comprar a MySQL AB em 2008.
+         
+            Já em 2010, a gigante Oracle, também norte-americana, por sua vez comprou a Sun Microsystems, e o MySQL MySQL tem sido da Oracle desde então.
+          </p>
+          <p>
+            Quanto a sua definição, MySQL é um Banco de Dados relacional (RDBMS – Relational Database Management Systems) com um modelo de cliente-servidor. 
+         
+            RDBMS é um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional. Agora vamos analisar cada termo.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ofktsne-utM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <button type="button" class="btn btn-dark">
+            <a style="color: whitesmoke;" class="nav-link" href="#topo">Voltar ao topo</a>
+          </button>
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <h6 style="color: white;">Vitor Mateus Weirich - Fundamentos ao Desonvilmento Web - 2020</h6>
+    </footer>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

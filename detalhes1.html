@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+      body {
+        background-color: black !important;
+      }
+      
+      hr {
+        border-color: rgb(209, 6, 113) !important;
+      }
+
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        text-align: justify;
+        text-indent: 4em;
+      }
+
+      @media (max-width: 500px) {
+        p {
+          font-size: 16px;
+          text-indent: 2em;
+        }
+
+        iframe {
+          width: 250px;
+        }
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="sortcut icon" href="./imagens/logo.jpg">
+    <title>Banco de Dados</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a name="topo" href="./index.html">
+                <img style="height: 50px;" src="./imagens/logo.jpg" class="figure-img img-fluid rounded">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="./index.html">Voltar a pagina principal</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#conceitos">Conceitos</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#relacionais">Bancos relacionais</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#tabelas">Tabelas</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#campos">Campos</a>
+                  </li></button>
+                  <button type="button" class="btn btn-dark"><li class="nav-item active">
+                    <a style="color: whitesmoke;" class="nav-link" href="#registros">Registros</a>
+                  </li></button>
+                </ul>
+            </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div id="pai" class="container">
+        <div class="jumbotron">
+          <a name="conceitos" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;"> Conceito de banco de dados</h1>
+          <p>
+            Bancos de dados (português brasileiro) ou bases de dados (português europeu)  são conjuntos de arquivos relacionados entre si com registros sobre pessoas, lugares ou coisas. São coleções organizadas de dados que se relacionam de forma a criar algum sentido (Informação) e dar mais eficiência durante uma pesquisa ou estudo cientifico. São de vital importância para empresas e há mais de duas décadas se tornaram a principal peça dos sistemas de informação e segurança. Normalmente existentes por vários anos sem alterações em sua estrutura sistemática. 
+          </p>
+          <p>
+            São operados pelos Sistemas Gerenciadores de Bancos de Dados (SGBD), que surgiram na década de 70. Antes destes, as aplicações usavam sistemas de arquivos do sistema operacional para armazenar suas informações. Na década de 80, a tecnologia de SGBD relacional passou a dominar o mercado, e atualmente utiliza-se praticamente apenas ela. Outro tipo notável é o SGBD Orientado a Objetos, para quando sua estrutura ou as aplicações que o utilizam mudam constantemente.
+          </p>
+          <p>
+            A principal aplicação de Banco de Dados é controle de operações empresariais. Outra aplicação também importante é gerenciamento de informações de estudos, como fazem os Bancos de Dados Geográficos, que unem informações convencionais a espaciais.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2E7crqRI1iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="jumbotron">
+          <a name="relacionais" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Bancos relacionais</h1>
+          <p>
+            Bem diferente dos modelos hierárquico e de rede, não existem quaisquer apontadores, de acordo com o Princípio da Informação: toda a informação deve ser representada como dados; qualquer tipo de atributo representa relações entre conjuntos de dados. As bases de dados relacionais permitem aos utilizadores (incluindo programadores) escreverem consultas (queries) que não foram antecipadas por quem projetou a base de dados. Como resultado, bases de dados relacionais podem ser utilizadas por várias aplicações em formas que os projetistas originais não previram, o que é especialmente importante em bases de dados que podem ser utilizadas durante décadas ou longos períodos. Isto tem tornado as bases de dados relacionais muito populares no meio empresarial.
+          </p>
+          <p>
+            O modelo relacional é uma teoria matemática desenvolvida por Edgar Frank Codd para descrever como as bases de dados devem funcionar. Embora esta teoria seja a base para o software de bases de dados relacionais, poucos sistemas de gestão de bases de dados seguem o modelo de forma restrita ou a pé da letra - lembre-se das 12 leis do modelo relacional - e todos têm funcionalidades que violam a teoria, desta forma variando a complexidade e o poder. A discussão se esses bancos de dados merecem ser chamados de relacional ficou esgotada com o tempo, com a evolução dos bancos existentes. Os bancos de dados hoje implementam o modelo definido como objeto-relacional. Os primeiros sistemas comerciais baseados no MR foram disponibilizados em 1980 e desde então ele vem sendo implementado em muitos sistemas, tais como Access, Oracle, MySql, entre outros.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DudIYzThfPQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="jumbotron">
+          <a name="tabelas" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Entidades ou tabelas</h1>
+          <p>
+            Nos modelos de bases de dados relacionais, a tabela é um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas (ou tuplas).
+            As colunas são tipicamente consideradas os campos da tabela, e caracterizam os tipos de dados que deverão constar na tabela (numéricos, alfa-numéricos, datas, coordenadas, etc). O número de linhas pode ser interpretado como o número de combinações de valores dos campos da tabela, e pode conter linhas idênticas, dependendo do objectivo. A forma de referenciar inequivocamente uma única linha é através da utilização de uma chave primária.
+            Para além do tipo de dados inerente a todas as colunas de uma tabela, algumas podem ter associadas restrições: a unicidade (SQL: UNIQUE), proibição de valores NULL (SQL: NOT NULL), delimitação de valores, etc. Estas restrições impedem que sejam inseridos valores não desejados que comprometam a validade e integridade dos dados. </p>
+          <p>
+            O número de tuplas de uma tabela é virtualmente ilimitado, o que torna as pesquisas por valor potencialmente muito lentas. Para permitir agilizar estas consultas, podem ser associados índices à tabela, que são estruturas de dados independentes da forma e ordem como estão armazenados os dados, embora tenham relação directa com os mesmos. Como consequência, a cada alteração de dados, irá corresponder uma (ou mais) alterações em cada um dos índices, aumentando o esforço necessário ao sistema gestor de base de dados (SGBD) para gerir essa alteração, motivo pelo qual os índices não existam naturalmente para cada coluna. A estrutura usada para a elaboração do índice depende do SGBD e do tipo de dados das colunas usadas no índice: árvore B, árvore R, etc.
+          </p>
+            Não obstante o papel principal da tabela ser a de armazenamento de dados, é também utilizada como representação de relações, tipicamente de N para M. Nesse caso específico, essa tabela irá dispor obrigatoriamente de duas relações 1 para N — uma para a tabela N e outra para a tabela M — e, eventualmente, de atributos específicos à relação. Como consequência desta característica, este tipo de tabela nunca poderá conter linhas duplicadas.
+            Um outro tipo de tabela especial — por não fazer armazenamento de dados — é a vista, cujas linhas são determinadas dinamicamente através de uma query (consulta) de tabelas reais (que armazenam os dados).
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/rGLBNhn7aWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="jumbotron">
+          <a name="campos" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Atributos ou campos</h1>
+          <p>
+            Um campo é uma unidade de entrada de dados básica em um registro. Para definir um novo campo, você deve nomeá-lo. Em seguida, você deve selecionar as opções que determinem como o campo interpreta, insere, calcula, armazena e exibe dados. </p>
+            <p>
+            Após definir um campo, você pode configurar opções de validação, inserção automática e armazenamento. Consulte Configuração de opções para campos.
+            Há três formas de definir campos em um banco de dados: </p>
+            <li>No Modo de layout, usando a caixa de diálogo Seletor de campos (consulte Definição de campos na caixa de diálogo Seletor de campos).</li>
+            <li> Na caixa de diálogo Gerenciar banco de dados (consulte Definição de campos na caixa de diálogo Gerenciar banco de dados). </li>
+            <li>Na Exibição em tabela (consulte Definição de campos na Exibição em tabela).</li>
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/59TZc_vRpcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="jumbotron">
+          <a name="registros" href=""></a>
+          <h1 style="text-align: center; color: blueviolet;">Registros</h1>
+          <p>
+            No contexto de um banco de dados relacional, um registro - também chamado de linha (do inglês row) - representa um único item implícito de dados estruturados em uma tabela. Em termos simples, uma tabela de banco de dados pode ser imaginada como consistindo de linhas e colunas ou campos. Cada linha em uma tabela representa um conjunto de dados relacionados e toda linha na tabela possui a mesma estrutura.
+
+            Por exemplo, em uma tabela que representa companhias, cada linha representaria uma única companhia. Colunas poderiam representar coisas como o nome da companhia, endereço da companhia, se a companhia é de capital aberto, seu número IVA, etc. Em uma tabela que representa a associação de empregados com departamentos, cada linha associaria um empregado com um departamento. 
+          </p>
+          <p>
+            Em uma utilização menos formal, por exemplo, para um banco de dados que não é formalmente relacional, um registro é equivalente a uma linha como descrita acima, mas não é usualmente referenciada como uma linha.
+
+            A estrutura implícita de uma linha, e o significado dos valores dos dados em uma linha, necessita que a linha seja compreendida como proporcionando uma sucessão de valores de dados, um em cada coluna da tabela. A linha é então interpretada como um relvar composto de um conjunto de tuplas, com cada tupla consistindo de dois itens: o nome da coluna relevante e o valor que esta linha fornece para aquela coluna.
+
+            Cada coluna espera um valor de dado de um tipo particular. Por exemplo, uma coluna pode necessitar de um único identificador, outra pode necessitar de texto que represente um nome de pessoa, outra pode necessitar que um inteiro represente o pagamento por hora em centavos.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TuvO79zyzew" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br>
+          <button type="button" class="btn btn-dark">
+            <a style="color: whitesmoke;" class="nav-link" href="#topo">Voltar ao topo</a>
+          </button>
+        </div>
+    </section>
+
+    <footer>
+      <hr>
+      <h6 style="color: white;">Vitor Mateus Weirich - Fundamentos ao Desonvilmento Web - 2020</h6>
+    </footer>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
