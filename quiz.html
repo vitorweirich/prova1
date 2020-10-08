@@ -10,6 +10,7 @@
       }
       
       hr {
+        color: greenyellow;
         border-color: rgb(209, 6, 113) !important;
       }
     </style>
@@ -44,7 +45,7 @@
         <div class="jumbotron">
           <h1 style="text-align: center; color: blueviolet;">Bem vindo ao quiz sobre Banco de Dados!</h1>
         </div>
-        <div class="jumbotron">
+        <div id="pai1" class="jumbotron">
           <P>1: O que é Banco de Dados?</P>
           <li>A: Um banco confortável.</li>
           <li>B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.</li>
@@ -64,7 +65,7 @@
           <h5 id="result1"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai2" class="jumbotron">
           <P>2: O que significa a sigla SQL?</P>
           <li>A: Linguagem de Programação.</li>
           <li>B: Linguagem padrão de modelagem de dados.</li>
@@ -84,7 +85,7 @@
           <h5 id="result2"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai3" class="jumbotron">
           <P>3: O que é MySQL?</P>
           <li>A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.</li>
           <li>A: Um fremword de css.</li>
@@ -104,7 +105,7 @@
           <h5 id="result3"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai4" class="jumbotron">
           <P>4: O que é SQL?</P>
           <li>A: SQL é um montador de algoritmos.</li>
           <li>B: SQL é um gerenciador de arquivos.</li>
@@ -124,7 +125,7 @@
           <h5 id="result4"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai5" class="jumbotron">
           <P>5: Qual a alternativa contém apenas tipos de dados presentes em banco de dados:</P>
           <li>A: Inteiros, Float, String e Data.</li>
           <li>A: String, Float, String e Espécie.</li>
@@ -144,7 +145,7 @@
           <h5 id="result5"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai6" class="jumbotron">
           <P>6: Para que serve uma Chave em Banco de Dados?</P>
           <li>A: Para poder prender um arquivo.</li>
           <li>B: Para ter acesso a um objeto.</li>
@@ -164,7 +165,7 @@
           <h5 id="result6"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai7" class="jumbotron">
           <P>7: O que é uma Tabela?</P>
           <li>A: Um conjunto de linhas.</li>
           <li>B: Um conjunto de dados dispostos em número finito de colunas e número limitado de linhas.</li>
@@ -184,7 +185,7 @@
           <h5 id="result7"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai8" class="jumbotron">
           <P>8: Um registro pode ser chamado tembém de? </P>
           <li>A: Linha.</li>
           <li>B: Coluna.</li>
@@ -204,7 +205,7 @@
           <h5 id="result8"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai9" class="jumbotron">
           <P>9: MySQL é um banco de dados de qual tipo?</P>
           <li>A: Orientado a objetos.</li>
           <li>B: Sequencial.</li>
@@ -224,7 +225,7 @@
           <h5 id="result9"></h5>
         </div>
         <hr>
-        <div class="jumbotron">
+        <div id="pai10" class="jumbotron">
           <P>10: Por que os banco de dados foram criados?</P>
           <li>A: Porque o volume de dados aumentou muito.</li>
           <li>B: Porque não era mais possível fabricar tanto papel.</li>
@@ -267,90 +268,110 @@
         var string;
         document.getElementById('result1').innerHTML = a;
         if (a==2) {
+          pai1.style = 'background-color:  greenyellow;';
           document.getElementById('result1').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.";
           cont++;
         } else {
+          pai1.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result1').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "B: Um conjunto de arquivos relacionados com registros de pessoas ou objetos.";
         }
 
         var a = document.getElementById('resp2').value;
         document.getElementById('result2').innerHTML = a;
         if (a==4) {
+          pai2.style = 'background-color:  greenyellow;';
           document.getElementById('result2').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "D: Standard Query Language.";
           cont++;
         } else {
+          pai2.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result2').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "D: Standard Query Language.";
         }
 
         var a = document.getElementById('resp3').value;
         document.getElementById('result3').innerHTML = a;
         if (a==1) {
+          pai3.style = 'background-color:  greenyellow;';
           document.getElementById('result3').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.";
           cont++;
         } else {
+          pai3.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result3').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Um software de código aberto ou serviço usado na criação e gerenciamento de bancos de dados baseados no modelo relacional.";
         }
 
         var a = document.getElementById('resp4').value;
         document.getElementById('result4').innerHTML = a;
         if (a==3) {
+          pai4.style = 'background-color:  greenyellow;';
           document.getElementById('result4').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.";
           cont++;
         } else {
+          pai4.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result4').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: SQL é uma linguagem padrão para trabalhar com bancos de dados relacionais.";
         }
 
         var a = document.getElementById('resp5').value;
         document.getElementById('result5').innerHTML = a;
         if (a==1) {
+          pai5.style = 'background-color:  greenyellow;';
           document.getElementById('result5').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Inteiros, Float, String e Data.";
           cont++;
         } else {
+          pai5.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result5').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Inteiros, Float, String e Data.";
         }
 
         var a = document.getElementById('resp6').value;
         document.getElementById('result6').innerHTML = a;
         if (a==3) {
+          pai6.style = 'background-color:  greenyellow;';
           document.getElementById('result6').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: Para poder identificar um objeto de forma única.";
           cont++;
         } else {
+          pai6.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result6').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: Para poder identificar um objeto de forma única.";
         }
 
         var a = document.getElementById('resp7').value;
         document.getElementById('result7').innerHTML = a;
         if (a==4) {
+          pai7.style = 'background-color:  greenyellow;';
           document.getElementById('result7').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "D: Um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas.";
           cont++;
         } else {
+          pai7.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result7').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "D: Um conjunto de dados dispostos em número infinito de colunas e número ilimitado de linhas.";
         }
 
         var a = document.getElementById('resp8').value;
         document.getElementById('result8').innerHTML = a;
         if (a==1) {
+          pai8.style = 'background-color:  greenyellow;';
           document.getElementById('result8').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Linha.";
           cont++;
         } else {
+          pai8.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result8').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Linha.";
         }
 
         var a = document.getElementById('resp9').value;
         document.getElementById('result9').innerHTML = a;
         if (a==3) {
+          pai9.style = 'background-color:  greenyellow;';
           document.getElementById('result9').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "C: Relacional.";
           cont++;
         } else {
+          pai9.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result9').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "C: Relacional.";
         }
 
         var a = document.getElementById('resp10').value;
         document.getElementById('result10').innerHTML = a;
         if (a==1) {
+          pai10.style = 'background-color:  greenyellow;';
           document.getElementById('result10').innerHTML = "Parabéns voce acertou essa questão, que é a:" + "<br>" + "A: Porque o volume de dados aumentou muito.";
           cont++;
         } else {
+          pai10.style = 'background-color:  rgb(231, 98, 98);';
           document.getElementById('result10').innerHTML = "Que pena você errou, a resposta correta era a :" + "<br>" + "A: Porque o volume de dados aumentou muito.";
         }
 
